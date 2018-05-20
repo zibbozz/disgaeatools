@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Disgaea Tools</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/fa-svg-with-js.css">
+		<script src="js/fontawesome.min.js"></script>
+		<script src="js/fa-solid.min.js"></script>
+		<script src="js/fa-brands.min.js"></script>
+		<script src="js/items.js"></script>
+	</head>
+	<body class="bg-dark" onload="init()" id="top" style="overflow-x:hidden;">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+			<a class="navbar-brand" href="index.html">Disgaea Tools</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainBar">
+				<i class="fas fa-bars fa-lg"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="mainBar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="itemworldcalc.html">Itemworld</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="items.html">Items</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="row bg-dark text-light mt-5">
+			<div class="col-4 offset-4">
+				<div class="list-group">
+					<a href="#waffenHeader" class="list-group-item list-group-item-action text-center bg-dark text-light">Waffen</a>
+					<a href="#equipHeader" class="list-group-item list-group-item-action text-center bg-dark text-light">Equipment</a>
+					<a href="#useitemHeader" class="list-group-item list-group-item-action text-center bg-dark text-light">Einsetzbare Items</a>
+					<a href="#boosterHeader" class="list-group-item list-group-item-action text-center bg-dark text-light">Booster</a>
+				</div>
+			</div>
+		</div>
+		<div class="row bg-dark text-light mt-5">
+			<div class="col-12 text-center">
+				<h3 id="waffenHeader">Waffen</h3>
+			</div>
+		</div>
+		<div class="row bg-dark text-light mt-3">
+			<div class="col-12">
+				<table class="table table-striped text-center">
+					<thead>
+						<tr>
+							<th scope="col">Rank</th>
+							<th scope="col">Fists</th>
+							<th scope="col">Swords</th>
+							<th scope="col">Spears</th>
+							<th scope="col">Bows</th>
+							<th scope="col">Guns</th>
+							<th scope="col">Axes</th>
+							<th scope="col">Staffs</th>
+							<th scope="col">Monster</th>
+						</tr>
+					</thead>
+					<tbody id="weaponBody">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row bg-dark text-light mt-5">
+			<div class="col-12 text-center">
+				<h3 id="equipHeader">Equipment</h3>
+			</div>
+		</div>
+		<div class="row bg-dark text-light mt-3">
+			<div class="col-12">
+				<table class="table table-striped text-center">
+					<thead>
+						<tr>
+							<th scope="col">Rank</th>
+							<th scope="col">Armor</th>
+							<th scope="col">Belts</th>
+							<th scope="col">Shoes</th>
+							<th scope="col">Eyewear</th>
+							<th scope="col">Orbs</th>
+							<th scope="col">Muscles</th>
+							<th scope="col">Full Boosters</th>
+							<th scope="col">Stealing Hands</th>
+						</tr>
+					</thead>
+					<tbody id="armorBody">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row bg-dark text-light mt-5">
+			<div class="col-12 text-center">
+				<h3 id="useitemHeader">Einsetzbare Items</h3>
+			</div>
+		</div>
+		<div class="row bg-dark text-light mt-3">
+			<div class="col-12">
+				<table class="table table-striped text-center">
+					<thead>
+						<tr>
+							<th scope="col">Rank</th>
+							<th scope="col">Item</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>ABC Gum</td>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mint Gum</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Candy</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td>Cotton Candy</td>
+						</tr>
+						<tr>
+							<th scope="row">7</th>
+							<td>Taiyaki</td>
+						</tr>
+						<tr>
+							<th scope="row">9</th>
+							<td>Chocolate</td>
+						</tr>
+						<tr>
+							<th scope="row">11</th>
+							<td>Flan</td>
+						</tr>
+						<tr>
+							<th scope="row">13</th>
+							<td>Eclair</td>
+						</tr>
+						<tr>
+							<th scope="row">20</th>
+							<td>Shortcake</td>
+						</tr>
+						<tr>
+							<th scope="row">30</th>
+							<td>Sundae</td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<td>Opened Drink</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Unopened Drink</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>Garlic Water</td>
+						</tr>
+						<tr>
+							<th scope="row">6</th>
+							<td>Yam Starch</td>
+						</tr>
+						<tr>
+							<th scope="row">8</th>
+							<td>Barbeque Sauce</td>
+						</tr>
+						<tr>
+							<th scope="row">10</th>
+							<td>Egg Yolk</td>
+						</tr>
+						<tr>
+							<th scope="row">12</th>
+							<td>Protein Shake</td>
+						</tr>
+						<tr>
+							<th scope="row">14</th>
+							<td>Bloody Mary</td>
+						</tr>
+						<tr>
+							<th scope="row">22</th>
+							<td>Sake</td>
+						</tr>
+						<tr>
+							<th scope="row">33</th>
+							<td>Mushroom Soup</td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Dried Worm</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Caterpillar Egg</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td>Charred Newt</td>
+						</tr>
+						<tr>
+							<th scope="row">7</th>
+							<td>Rooster Blood</td>
+						</tr>
+						<tr>
+							<th scope="row">9</th>
+							<td>Snake Kidney</td>
+						</tr>
+						<tr>
+							<th scope="row">12</th>
+							<td>Bat Soup</td>
+						</tr>
+						<tr>
+							<th scope="row">15</th>
+							<td>Frog Sweat</td>
+						</tr>
+						<tr>
+							<th scope="row">20</th>
+							<td>Immortals Pill</td>
+						</tr>
+						<tr>
+							<th scope="row">28</th>
+							<td>Soma</td>
+						</tr>
+						<tr>
+							<th scope="row">38</th>
+							<td>Elixir</td>
+						</tr>
+						<tr>
+							<th scope="row">39</th>
+							<td>Veggie Burger</td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<td>Faerie Dust</td>
+						</tr>
+						<tr>
+							<th scope="row"></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Mr Gencys Exit</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row bg-dark text-light mt-5">
+			<div class="col-12 text-center">
+				<h3 id="boosterHeader">Booster</h3>
+			</div>
+		</div>
+		<div class="row bg-dark text-light mt-3">
+			<div class="col-12">
+				<table class="table table-striped text-center">
+					<thead>
+						<tr>
+							<th scope="col">Rank</th>
+							<th scope="col">Item</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">15</th>
+							<td>Horse Wiener</td>
+						</tr>
+						<tr>
+							<th scope="row">15</th>
+							<td>Mahoganys Brain</td>
+						</tr>
+						<tr>
+							<th scope="row">15</th>
+							<td>Hercules Body</td>
+						</tr>
+						<tr>
+							<th scope="row">40</th>
+							<td>Gros Guts</td>
+						</tr>
+						<tr>
+							<th scope="row">40</th>
+							<td>Crowdias Beauty</td>
+						</tr>
+						<tr>
+							<th scope="row">40</th>
+							<td>Myads Cat Ears</td>
+						</tr>
+						<tr>
+							<th scope="row">40</th>
+							<td>Astro Suit</td>
+						</tr>
+						<tr>
+							<th scope="row">41</th>
+							<td>Prinny Costume</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<a href="#top"><button class="btn btn-primary" style="position:fixed;right:1%;bottom:1%;border-radius:50%;"><i class="fas fa-arrow-up"></i></button></a>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

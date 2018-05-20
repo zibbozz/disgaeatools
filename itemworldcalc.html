@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Disgaea Tools</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/fa-svg-with-js.css">
+		<script src="js/fontawesome.min.js"></script>
+		<script src="js/fa-solid.min.js"></script>
+		<script src="js/fa-brands.min.js"></script>
+		<script src="js/calc.js"></script>
+	</head>
+	<body class="bg-dark" onload="init();">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+			<a class="navbar-brand" href="index.html">Disgaea Tools</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainBar">
+				<i class="fas fa-bars fa-lg"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="mainBar">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="itemworldcalc.html">Itemworld</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="items.html">Items</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row bg-dark text-light">
+				<div class="col-12 text-center">
+					<h3>Itemworld</h3>
+				</div>
+			</div>
+			<div class="row bg-dark text-light">
+				<div class="col-12 col-md-6 text-center mt-3">
+					<p>Item Rank</p>
+				</div>
+				<div class="col-12 col-md-6 text-center mt-3">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="1-40" onblur="checkRank()" id="rank" value="1">
+					</div>
+				</div>
+				<div class="col-12 col-md-6 text-center mt-3">
+					<p>Floor</p>
+				</div>
+				<div class="col-12 col-md-6 text-center mt-3">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="1-100" onblur="checkFloor()" id="floor" value="1">
+					</div>
+				</div>
+				<div class="col-12 col-md-6 text-center mt-3">
+					<p>Stronger Enemies Bills</p>
+				</div>
+				<div class="col-12 col-md-6 text-center mt-3">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="0-20" onblur="checkBills()" id="bills" value="0">
+					</div>
+				</div>
+			</div>
+			<div class="row bg-dark text-light mt-3">
+				<div class="col-6 offset-3">
+					<button onclick="calc()" class="btn btn-outline-primary btn-block">Berechnen</button>
+				</div>
+			</div>
+			<div class="row bg-dark text-light text-center mt-5">
+				<div class="col-12 col-md-6">
+					<p>Average Enemy Level</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<p id="avLevel">0</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<p>Enemy Level Range</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<p id="rangeLevel">0</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<p>Gatekeeper Level</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<p id="gatekeeperLevel">0</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
